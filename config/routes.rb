@@ -1,5 +1,8 @@
 RainforestNew::Application.routes.draw do
 
+  get "reviews/show"
+  get "reviews/new"
+  get "reviews/edit"
   get "sessions/new"
   get "sessions/create"
   get "sessions/destroy"
@@ -7,7 +10,10 @@ RainforestNew::Application.routes.draw do
   get "users/create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :products
+  resources :products do
+    resources :reviews, :except => [:index]
+  end
+  
   resources :users, :onlly => [:new, :create]
   resources :sessions, :only => [:new, :create, :destroy]
 
