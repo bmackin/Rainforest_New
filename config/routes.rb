@@ -1,11 +1,16 @@
 RainforestNew::Application.routes.draw do
 
+  get "users/new"
+  get "users/create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :products
+  resources :users, :onlly => [:new, :create]
 
   # You can have the root of your site routed with "root"
   root 'products#index'
+
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -55,4 +60,4 @@ RainforestNew::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
