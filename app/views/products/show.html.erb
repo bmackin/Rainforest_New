@@ -1,6 +1,9 @@
 <p><%= link_to 'back', products_path %></p>
-
+<div id="product_image">
  <img src="<%= @product[:url] %>">
+</div>
+
+<div id="product_description">
  <h2><%= @product.name %></h2>
  <p><%= @product.formatted_price %></p>
  <p><%= @product.description %></p>
@@ -50,3 +53,4 @@
     <% else %>
       <p>Please <%= link_to "Log In", new_session_path %> to add a review.</p> 
     <% end %>
+</div>

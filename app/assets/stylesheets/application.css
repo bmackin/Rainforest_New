@@ -25,9 +25,12 @@ h1, h2, h3, h4 {
 	font-weight: 400;
 }
 
-/*body {
+body {
 	height: auto;
-}*/
+	margin: auto;
+/*	position: absolute;*/
+	text-align: center;
+}
 
 .field, .label 	{
 	font-family: 'Raleway', sans-serif;
@@ -40,8 +43,6 @@ h1, h2, h3, h4 {
 }
 
 #cover_image {
-	width: 946px;
-	display: absolute;
 	margin: auto;
 	margin-top: -10px;
 }
@@ -49,12 +50,13 @@ h1, h2, h3, h4 {
 
 #menu_wrapper {
 	height: 60px;
+	position: absolute;
 
 }
 
-
 .product_wrapper {
-	width: 900px;
+/*	position: absolute;*/
+	width: 60%;
 	height: auto;
 	margin: auto;
 	text-align: justify;
@@ -68,7 +70,24 @@ h1, h2, h3, h4 {
 
 .product_wrapper:after {
 	content: " ";
-	width: 100%;
+/*	width: 100%;*/
 	display: inline-block;
+}
+
+#product_image {
+/*	padding-top: 15%;*/
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#product_description {
+/*	padding-top: 15%;*/
+	display: inline-block;
+	padding-left: 10%;
+	text-align: left;
+	vertical-align: top;
+
+
 }
 

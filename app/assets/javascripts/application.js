@@ -14,3 +14,31 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// $(document).ready(function(){
+
+// 	$("#login_btn").click(function(){
+// 		$("#login_form").dialog({
+// 		  autoOpen: false,
+// 		  height: 300,
+// 		  width: 300,
+// 		  modal: true,
+// 		  dialogClass: "success-dialog",
+// 		  close: function(){
+// 		  }
+// 		});
+// 		$("#login_form").dialog("open");
+// 	});
+
+// 	$("#signup_btn").click(function(){
+// 		$("#sign_up_form").dialog({
+// 		  autoOpen: false,
+// 		  height: 300,
+// 		  width: 300,
+// 		  modal: true, 
+// 		  close: function(){
+// 		  }
+// 		});
+// 		$("#sign_up_form").dialog("open");
+// 	});
+
+// });
